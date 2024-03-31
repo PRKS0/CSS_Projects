@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f1f1f1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    background-color: #121321;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    background-image: linear-gradient(to right, #383891, #ddc7dd);
+    transform: translateX(-220px);
+}
+
+.circle2 {
+    background-image: linear-gradient(to right, #383891, #ddc7dd);
+    transform: translateX(220px);
+}
+
+.card-container {
+    position: absolute;
+    top: calc(50% - 125px);
+    left: calc(50% - 220px);
+    height: 250px;
+    width: 440px;
+    border-radius: 30px;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+
+.card-container:hover {
+    transform: rotateY(180deg);
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: absolute;
+    padding: 20px;
+    backface-visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+}
+.logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.front header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chip {
+    width: 42px;
+    border-radius: 20px;
+}
+
+.card-num {
+    margin-top: 38px;
+}
+
+.card-num h5 {
+    margin-bottom: 8px;
+    font: 16px;
+}
+
+.namedetails {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.namedetails .valid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.valid>span:first-child {
+    font-size: 14px;
+}
+
+.valid>span:last-child {
+    font-size: 18px;
+}
+
+.back {
+
+    padding: 20px 0px;
+    transform: rotateY(180deg);
+}
+
+.back .contact {
+    padding: 0px 20px;
+    font-size: 11px;
+}
+
+.back .blackbg {
+    height: 40px;
+    margin-top: 20px;
+    background-color: black;
+}
+.twobox{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    padding: 20px;
+    position: relative;
+}
+.bigbox{
+    height: 38px;
+    width: 75%;
+    /* background: white; */
+    border-radius: 10px;
+    position: absolute;
+    right: 77px;
+    z-index: 100;
+    background: repeating-linear-gradient(#dac4c4, #ccbebe 3px, #e1d5d5 0px, #ffffff 8px);
+}
+.smallbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 10%;
+    background-color: white;
+    color: black;
+    position: absolute;
+    z-index: 10;
+    left: 355px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+footer{
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    font-size: 11px;
+    font-weight: 400;
+}
