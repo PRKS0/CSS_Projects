@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: #c1b9b9; */
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 10px;
+    text-align: start;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #001122; */
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    /* background-color: #003300; */
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 20px;
+}
+
+.box {
+    padding: 10px;
+    text-align: center;
+}
+
+.processors {
+    height: 100%;
+    width: 30%;
+}
+
+.cpu-bar {
+    height: 100%;
+    width: 50%;
+}
+
+.cpu-mark {
+    height: 100%;
+    width: 20%;
+}
+.processor, .mark{
+    padding-left: 20px;
+}
+h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #c1b9b9;
+}
+
+.sub-box {
+    height: 40px;
+    /* display: flex;
+    align-items: center; */
+    margin-top: 5px;
+    position: relative;
+}
+
+@keyframes slider1 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes slider2 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 82%;
+    }
+}
+
+@keyframes slider3 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes slider4 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes slider5 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 52%;
+    }
+}
+
+@keyframes slider6 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 42%;
+    }
+}
+
+@keyframes slider7 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 38%;
+    }
+}
+
+@keyframes slider8 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 37%;
+    }
+}
+
+@keyframes slider9 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 33%;
+    }
+}
+
+@keyframes slider10 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 22%;
+    }
+}
+
+@keyframes slider11 {
+    0% {
+        width: 0%;
+    }
+    25%{
+        width: 90%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 95%;
+    }
+    100% {
+        width: 7%;
+    }
+}
+
+.bar .bar-color {
+    width: 0%;
+    height: 60%;
+    /* background-color: rgb(0, 17, 34); */
+    background-color: #FF6347;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* animation: name duration timing-func delay iteration-count direction fill-mode play-state */
+/* .bar:nth-of-type(1) .bar-color {
+    animation: slider1 3.8s cubic-bezier(0.42, 0, 0.58, 1) 0.2s forwards;
+}
+
+.bar:nth-of-type(2) .bar-color {
+    animation: slider2 3.6s cubic-bezier(0.25, 0.1, 0.25, 1) 0.4s forwards;
+}
+
+.bar:nth-of-type(3) .bar-color {
+    animation: slider3 3.4s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s forwards;
+}
+
+.bar:nth-of-type(4) .bar-color {
+    animation: slider4 3.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s forwards;
+}
+
+.bar:nth-of-type(5) .bar-color {
+    animation: slider5 3s cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s forwards;
+}
+
+.bar:nth-of-type(6) .bar-color {
+    animation: slider6 2.8s cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s forwards;
+}
+
+.bar:nth-of-type(7) .bar-color {
+    animation: slider7 2.6s cubic-bezier(0.19, 1, 0.22, 1) 1.4s forwards;
+}
+
+.bar:nth-of-type(8) .bar-color {
+    animation: slider8 2.4s cubic-bezier(0.03, 0.98, 0.52, 1) 1.6s forwards;
+}
+
+.bar:nth-of-type(9) .bar-color {
+    animation: slider9 2.2s cubic-bezier(0.075, 0.82, 0.165, 1) 1.8s forwards;
+}
+
+.bar:nth-of-type(10) .bar-color {
+    animation: slider10 2s cubic-bezier(0.55, 0.055, 0.675, 0.19) 2s forwards;
+}
+
+.bar:nth-of-type(11) .bar-color {
+    animation: slider11 1.8s cubic-bezier(0.895, 0.03, 0.685, 0.22) 2.2s forwards;
+}
+ */
+ .bar:nth-of-type(1) .bar-color {
+    animation: slider1 3.8s cubic-bezier(0.42, 0, 0.58, 1) 0.2s forwards;
+}
+
+.bar:nth-of-type(2) .bar-color {
+    animation: slider2 3.6s cubic-bezier(0.42, 0, 0.58, 1) 0.4s forwards;
+}
+
+.bar:nth-of-type(3) .bar-color {
+    animation: slider3 3.4s cubic-bezier(0.42, 0, 0.58, 1) 0.6s forwards;
+}
+
+.bar:nth-of-type(4) .bar-color {
+    animation: slider4 3.2s cubic-bezier(0.42, 0, 0.58, 1) 0.8s forwards;
+}
+
+.bar:nth-of-type(5) .bar-color {
+    animation: slider5 3s cubic-bezier(0.42, 0, 0.58, 1) 1s forwards;
+}
+
+.bar:nth-of-type(6) .bar-color {
+    animation: slider6 2.8s cubic-bezier(0.42, 0, 0.58, 1) 1.2s forwards;
+}
+
+.bar:nth-of-type(7) .bar-color {
+    animation: slider7 2.6s cubic-bezier(0.42, 0, 0.58, 1) 1.4s forwards;
+}
+
+.bar:nth-of-type(8) .bar-color {
+    animation: slider8 2.4s cubic-bezier(0.42, 0, 0.58, 1) 1.6s forwards;
+}
+
+.bar:nth-of-type(9) .bar-color {
+    animation: slider9 2.2s cubic-bezier(0.42, 0, 0.58, 1) 1.8s forwards;
+}
+
+.bar:nth-of-type(10) .bar-color {
+    animation: slider10 2s cubic-bezier(0.42, 0, 0.58, 1) 2s forwards;
+}
+
+.bar:nth-of-type(11) .bar-color {
+    animation: slider11 1.8s cubic-bezier(0.42, 0, 0.58, 1) 2.2s forwards;
+}
+
+
+.shadow {
+    position: absolute;
+    height: 24px;
+    width: 435.3px;
+    background-color: rgba(0, 17, 34, 0.3);
+    top: 0;
+    left: 0;
+}

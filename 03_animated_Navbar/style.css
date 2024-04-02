@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(220 212 224);
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 740px;
+    gap: 10px;
+    box-shadow: 2px 8px 15px #a99e9e;
+    border-radius: 5px;
+    border: none;
+    color: #35359c;
+    background: white;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    gap: 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+label:hover {
+    background-color: rgb(165, 157, 209);
+    border-radius: 5px;
+}
+
+.slider {
+    height: 100%;
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* z-index: 1; */
+    background: rgb(33, 38, 136);
+    border-radius: 5px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#courses:checked~nav .slider {
+    left: 150px;
+}
+
+#blog:checked~nav .slider {
+    left: 300px;
+}
+
+#design_services:checked~nav .slider {
+    left: 450px;
+}
+
+#about:checked~nav .slider {
+    left: 600px;
+}
+
+#home:checked~nav .home,
+#courses:checked~nav .courses,
+#blog:checked~nav .blog,
+#design_services:checked~nav .design_services,
+#about:checked~nav .about {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background: rgb(33, 38, 136);
+    color: rgb(219, 205, 205);
+}
+
+input{
+    display: none;
+}
