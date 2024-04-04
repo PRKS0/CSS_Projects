@@ -1,0 +1,33 @@
+#CSS Units
+Baiscally the %unit works on child member according to it's parents.
+But when we give absolute position then the %unit works works according to the it's positioned parent/grand-parent element. 
+
+Type of unit
+px, vh vw, %, vmax vmin, em rem
+
+vmax : will take size according to the bigger side. (according to the width in landscape[laptop], and according to the height in potrait[mobile])
+and vice-versa for vmin
+
+1em means 100% of parent  or parent*1
+2em means 200% of parent  or parent*2, like this .......... similar with %
+
+1rem = 16px(for font), relative to the root values and basicallly it is used for font-size but also can be used for other properites values like height width 
+
+
+#Responsive layouts
+Minimize the use of position:absolute, use flex in layouts, so here are some flex properites
+
+1. align items: used in cross-axis (y-axis in direction:row)
+2. justify content: used in main-axis (x-axis)
+
+display:flex change it's size according to the dispaly size. it can be good and bad property both. 
+if we do not want this auto size change, we can use flex-wrap prpperty to the parent. so the child will wrap and do not change it's original size. even we define the flex-direction, it wrap the boxes
+but to get the wrap property effectly, we have to set the height width of parent in % or vh-vw
+
+#CSS media queries: can change the css properties according to the screen height width
+max-width: ...   ----> applied when the screen size is below or equal to defined width
+@media (max-width){
+    selector{
+        and css properties here
+    }
+}

@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    font-family: "Baloo 2", sans-serif;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.nav{
+    height: 8vh;
+    width: 100vw;
+    /* background-color: seagreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.45vw 5vw;
+    border-bottom: solid 1.5px rgb(212 218 218);
+}
+h2{
+    font-size: 2vw;
+}
+.sub-nav{
+    display: flex;
+    gap: 3vw;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw;
+}
+.sub-nav span{
+    display: none;
+    font-size: 3.5vw;
+}
+.sub-nav button{
+    padding: 0.75vw 1vw;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2vw;
+    background-color: #181761;
+    color: white;
+    font-weight: 600;
+}
+.content{
+    height: 90vh;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+}
+.box{
+    height: 100%;
+    width: 50%;
+}
+.box1{
+    /* background-color: red; */
+    padding: 4vw 5vw;
+    font-size: 2.5vw;
+    font-weight: 700;
+    /* color: rgb(62, 78, 78); */
+}
+.box1 h3{
+    margin-top: 8px;
+    line-height: 3.35vw;
+}
+span{
+    color: #181761;
+}
+.box1 h4{
+    font-size: 1.2vw;
+    color: #62918d;
+    margin-bottom: 50px;
+}
+.box1 button{
+    padding: 1.2vw 1.4vw;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3vw;
+    background-color: #181761;
+    color: white;
+    font-weight: 700;
+}
+.box2 img{
+    height: 100%;
+    width: 100%;
+}
+@media (max-width:700px){
+    .nav{
+        background-color:rgb(237, 241, 241);
+        border-bottom: 2px solid rgb(206, 212, 212);
+        height: 8vh;
+        padding: 4px initial;
+    }
+    h2{
+        font-size: 7vw;
+    }
+    .sub-nav h4{
+        display: none;
+    }
+    .sub-nav span{
+        display: block;
+        font-size: 7vw;
+    }
+    .sub-nav button{
+        display: none;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .box1{
+        height: 40%;
+        width: 100%;
+    }
+    .box2{
+        height: 60%;
+        width: 100%;
+    }
+    .box1 h3{
+        font-size: 7vw;
+        line-height: 9vw;
+    }
+    .box1 h4{
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .box1 button{
+        padding: 3vw 5vw;
+        font-size: 4vw;
+        border-radius: 2.5vw;
+    }
+    .box2{
+        padding: 10vh 0vw;
+    }
+}
